@@ -16,6 +16,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res/layouts/001_linear_relative_frame_constraint',
+                    'src/main/res/layouts',
+                    'src/main/res'
+            ]
+        }
+    }
 }
 
 dependencies {
